@@ -1,0 +1,18 @@
+467..114..
+...*....*.
+..35..633.
+......#...
+617*......
+.....+.58.
+..592.....
+......755.
+7745127...
+...$.*....
+.664.598..
+
+dictionary
+{line: 1, number_index: 1,3,4, symbol_index: 1,3,4}
+parse_symbols_in_line()
+for index, line in enumerate(input):
+    parse_symbols_in_line(input[index-1])
+    parse_symbols_in_line(input[index+1])

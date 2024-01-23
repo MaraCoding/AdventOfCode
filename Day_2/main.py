@@ -9,8 +9,8 @@ def parse_input(file_path: str):
 def parse_valid_games(game: str, game_constraints: dict):
     game_index, game_data = game.strip().split(":")
     game_number = int(game_index.split(" ")[1])
-    game_rounds  = game_data.split(";")
-
+    game_rounds = game_data.split(";")
+    # Game 1: 3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green
     for round in game_rounds:
         cubes_in_round = round.strip().split(",")
         for cubes in cubes_in_round:
